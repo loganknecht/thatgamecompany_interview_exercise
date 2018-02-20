@@ -9,6 +9,8 @@
     - https://www.getpostman.com/
 
 # Repository Configuration
+- Configure `virtualenv` for Python 3
+- Activate virtualenv
 - Install dependencies
     - You'll want everything, so use the dev dependencies
     - `pip install -r requirements-dev.txt`

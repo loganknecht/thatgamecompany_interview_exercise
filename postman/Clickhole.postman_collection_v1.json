@@ -1,18 +1,15 @@
 {
 	"info": {
 		"name": "Clickhole",
-		"_postman_id": "77046884-6337-be12-776e-303358fd67d5",
-		"description": "",
+		"_postman_id": "193594c0-6667-1efb-6f68-3ab68cd79da5",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "/shop",
-			"description": "",
 			"item": [
 				{
 					"name": "/items",
-					"description": "",
 					"item": [
 						{
 							"name": "Create Item",
@@ -34,25 +31,21 @@
 										{
 											"key": "name",
 											"value": "Axe-pick",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "value",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "short_description",
 											"value": "It's an axe pick!",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "long_description",
 											"value": "Forged in the mountains of Jabralthar, carried across the coats of Hageshikaigan, bury in the valleys of the ancient Oaxavajo: This is a modest pick axe.",
-											"description": "",
 											"type": "text"
 										}
 									]
@@ -90,7 +83,10 @@
 										"value": "Bearer {{token}}"
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/",
 									"protocol": "http",
@@ -124,7 +120,10 @@
 										"value": "Bearer {{token}}"
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/1/",
 									"protocol": "http",
@@ -159,7 +158,10 @@
 										"value": "Bearer {{token}}"
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/2/",
 									"protocol": "http",
@@ -185,7 +187,6 @@
 				},
 				{
 					"name": "/purchase",
-					"description": "",
 					"item": [
 						{
 							"name": "Purchase Item",
@@ -207,19 +208,16 @@
 										{
 											"key": "purchaser_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "recipient_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "item_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										}
 									]
@@ -263,13 +261,11 @@
 										{
 											"key": "purchaser_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "recipient_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										}
 									]
@@ -313,13 +309,11 @@
 										{
 											"key": "purchaser_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										},
 										{
 											"key": "recipient_id",
 											"value": "1",
-											"description": "",
 											"type": "text"
 										}
 									]
@@ -351,7 +345,6 @@
 		},
 		{
 			"name": "/digger",
-			"description": "",
 			"item": [
 				{
 					"name": "List Diggers",
@@ -367,7 +360,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
 							"protocol": "http",
@@ -381,13 +377,12 @@
 								"digger",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
 				{
-					"name": "List Specific Digger (TODO)",
+					"name": "List Specific Digger",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -400,7 +395,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/{{digger_id}}/",
 							"protocol": "http",
@@ -415,8 +413,7 @@
 								"{{digger_id}}",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -434,7 +431,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
 							"protocol": "http",
@@ -448,8 +448,7 @@
 								"digger",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -467,7 +466,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
 							"protocol": "http",
@@ -481,8 +483,7 @@
 								"digger",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -500,7 +501,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
 							"protocol": "http",
@@ -514,8 +518,7 @@
 								"digger",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				}
@@ -523,7 +526,6 @@
 		},
 		{
 			"name": "/gifts",
-			"description": "",
 			"item": [
 				{
 					"name": "List Gifts Given",
@@ -539,7 +541,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/gift/",
 							"protocol": "http",
@@ -553,8 +558,7 @@
 								"gift",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -572,7 +576,10 @@
 								"value": "Bearer {{token}}"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/present/",
 							"protocol": "http",
@@ -586,8 +593,7 @@
 								"present",
 								""
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				}
@@ -632,7 +638,10 @@
 						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/login/",
 					"protocol": "http",
@@ -646,8 +655,7 @@
 						"login",
 						""
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
@@ -665,7 +673,10 @@
 						"disabled": true
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/ping/",
 					"protocol": "http",
@@ -679,8 +690,7 @@
 						"ping",
 						""
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
@@ -702,7 +712,10 @@
 						"value": "{{token}}"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/whoami/",
 					"protocol": "http",
@@ -716,8 +729,7 @@
 						"whoami",
 						""
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
@@ -737,19 +749,16 @@
 						{
 							"key": "username",
 							"value": "{{username}}",
-							"description": "",
 							"type": "text"
 						},
 						{
 							"key": "password",
 							"value": "{{password}}",
-							"description": "",
 							"type": "text"
 						},
 						{
 							"key": "email",
 							"value": "{{email}}",
-							"description": "",
 							"type": "text"
 						}
 					]
@@ -767,8 +776,7 @@
 						"signup",
 						""
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
@@ -795,7 +803,6 @@
 						{
 							"key": "amount_to_dig",
 							"value": "1",
-							"description": "",
 							"type": "text"
 						}
 					]
@@ -813,8 +820,7 @@
 						"dig",
 						""
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		}
