@@ -1,1 +1,1 @@
-Please see the `[documentation](documentation)` directory.
+Please see the [documentation](documentation) directory.

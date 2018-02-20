@@ -8,3 +8,4 @@ locustio
 pdbpp
 pytest
 pytest-django
+virtualenv
