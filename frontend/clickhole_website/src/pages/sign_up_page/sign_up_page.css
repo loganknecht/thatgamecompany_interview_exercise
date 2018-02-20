@@ -1,0 +1,71 @@
+.signup.body {
+    background-color: rgba(255, 133, 0, 0.5);
+    font-family: sans-serif;
+    /* Did not look into this at all:; https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup.container {
+    align-items: center;
+    background-color: rgba(0, 133, 255, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 1px black;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    width: 400px;
+}
+
+.signup.container .header.image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup.container .header.image img {
+    padding: 0px 0px 0px 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.signup.container form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
+
+.username.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 0px 0px 3px;
+    width: 75%;
+}
+.username.container .header {
+}
+.username.container .field {
+}
+
+.password.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 0px 0px 3px;
+    width: 75%;
+}
+.password.container .header {
+}
+.password.container .field {
+}

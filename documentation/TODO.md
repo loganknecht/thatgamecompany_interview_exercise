@@ -1,0 +1,73 @@
+# MAIN TODO
+- You can log in with a username that is associated with your account data.
+    - Done
+- You “click” something every few seconds to earn some currency.
+    - Done
+- You can see in real-time the stats of other players that are playing at the same time.
+    - Done
+- You can spend your coins on a gift for another person who is online. They should see that you bought them a gift and should be able to reciprocate.
+    - Currency - done
+    - Spending - done
+    - Viewing - done
+- It supports about a thousand concurrent users
+    - Done
+
+# TODO
+- Web Pages
+    - game page
+    - player page
+    - gift shop page
+        - give to friends
+        - give to strangers
+    - 404 page
+    - 500 page
+- Design
+    - friends list
+        - determined by adding a person to the list
+            - via search
+            - button in profile
+    - acquaintances list
+        - determined by those who bought something for you
+- API
+    - /whoami
+        - Make a simple endpoint for debugging
+
+# TODO Not Going Address
+- Overlap between the purchase and the digging operations code wise
+    - simplify that so that the operations calls the same code to perform the same logic
+- API
+    - /logout
+        - Shorten token duration for security?
+- DB
+    - Migrate to postgres
+
+# Finished
+- Design
+    - depth tracking
+    - digging dubloons currency
+    - sign up process
+    - log in process
+- Web Pages
+    - log in
+    - home
+    - sign up
+- API
+    - Add gunicorn
+    - Add versioning
+    - Add jwt authentication for routes
+    - /shop/item
+        - Find a way to pre-populate this
+    - /signup
+    - /login
+    - /dig
+        - Create dubloon calculation on dig
+        - different metrics
+            - Don't worry about handling obscuring and verification for depth
+    - /shop/item
+    - /shop/purchase
+        - Essentially the same operation as digging but need add item purchase
+        - Subtract the dubloon amount from purchase
+- Unfiled
+    - Mock-up django workflow
+    - Mock-up frontend workflow
+    - Hook up react router

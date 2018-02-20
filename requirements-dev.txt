@@ -1,0 +1,10 @@
+coreapi
+django
+django-extensions
+djangorestframework
+djangorestframework-jwt
+gunicorn
+locustio
+pdbpp
+pytest
+pytest-django

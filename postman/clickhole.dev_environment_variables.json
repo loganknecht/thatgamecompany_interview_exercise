@@ -1,0 +1,46 @@
+{
+  "id": "24f40680-dc54-e7ca-3318-b95ac3050f8c",
+  "name": "clickhole",
+  "values": [
+    {
+      "enabled": true,
+      "key": "api_server_hostname",
+      "value": "localhost",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "api_server_port_number",
+      "value": "8000",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "digger_id",
+      "value": "1",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "email",
+      "value": "test0@test.com",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "password",
+      "value": "test_password",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "username",
+      "value": "test0",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1519090218984,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2018-02-20T01:30:45.460Z",
+  "_postman_exported_using": "Postman/5.5.3"
+}

@@ -1,0 +1,822 @@
+{
+	"info": {
+		"name": "Clickhole",
+		"_postman_id": "77046884-6337-be12-776e-303358fd67d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/shop",
+			"description": "",
+			"item": [
+				{
+					"name": "/items",
+					"description": "",
+					"item": [
+						{
+							"name": "Create Item",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Axe-pick",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "value",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "short_description",
+											"value": "It's an axe pick!",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "long_description",
+											"value": "Forged in the mountains of Jabralthar, carried across the coats of Hageshikaigan, bury in the valleys of the ancient Oaxavajo: This is a modest pick axe.",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"item",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						},
+						{
+							"name": "List Items",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"item",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						},
+						{
+							"name": "List Item",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/1/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"item",
+										"1",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Item",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/item/2/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"item",
+										"2",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "/purchase",
+					"description": "",
+					"item": [
+						{
+							"name": "Purchase Item",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "purchaser_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "recipient_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "item_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/purchase/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"purchase",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						},
+						{
+							"name": "List Purchases",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "purchaser_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "recipient_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/purchase/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"purchase",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						},
+						{
+							"name": "List Purchase",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "purchaser_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "recipient_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/shop/purchase/1/",
+									"protocol": "http",
+									"host": [
+										"{{api_server_hostname}}"
+									],
+									"port": "{{api_server_port_number}}",
+									"path": [
+										"api",
+										"v1",
+										"shop",
+										"purchase",
+										"1",
+										""
+									]
+								},
+								"description": "List all items"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "/digger",
+			"description": "",
+			"item": [
+				{
+					"name": "List Diggers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"digger",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Specific Digger (TODO)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/{{digger_id}}/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"digger",
+								"{{digger_id}}",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Digger (Should not work)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"digger",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Digger (Should not work)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"digger",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Digger (Should not work)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/digger/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"digger",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/gifts",
+			"description": "",
+			"item": [
+				{
+					"name": "List Gifts Given",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/gift/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"gift",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Presents Received",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/present/",
+							"protocol": "http",
+							"host": [
+								"{{api_server_hostname}}"
+							],
+							"port": "{{api_server_port_number}}",
+							"path": [
+								"api",
+								"v1",
+								"present",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "28e6a854-83c4-4426-986c-7e27515c413b",
+						"type": "text/javascript",
+						"exec": [
+							"var response_data = JSON.parse(responseBody);",
+							"var token = response_data.token;",
+							"postman.setEnvironmentVariable(\"token\", token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/login/",
+					"protocol": "http",
+					"host": [
+						"{{api_server_hostname}}"
+					],
+					"port": "{{api_server_port_number}}",
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/ping",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/ping/",
+					"protocol": "http",
+					"host": [
+						"{{api_server_hostname}}"
+					],
+					"port": "{{api_server_port_number}}",
+					"path": [
+						"api",
+						"v1",
+						"ping",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/whoami (TODO)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/whoami/",
+					"protocol": "http",
+					"host": [
+						"{{api_server_hostname}}"
+					],
+					"port": "{{api_server_port_number}}",
+					"path": [
+						"api",
+						"v1",
+						"whoami",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/signup/",
+					"protocol": "http",
+					"host": [
+						"{{api_server_hostname}}"
+					],
+					"port": "{{api_server_port_number}}",
+					"path": [
+						"api",
+						"v1",
+						"signup",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/dig",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount_to_dig",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{api_server_hostname}}:{{api_server_port_number}}/api/v1/dig/",
+					"protocol": "http",
+					"host": [
+						"{{api_server_hostname}}"
+					],
+					"port": "{{api_server_port_number}}",
+					"path": [
+						"api",
+						"v1",
+						"dig",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

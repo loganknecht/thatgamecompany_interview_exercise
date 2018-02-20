@@ -1,0 +1,36 @@
+[
+  {
+    "model": "api.item",
+    "pk": 1,
+    "fields": {
+      "name": "Axe-pick",
+      "short_description": "It's an axe pick!",
+      "long_description":
+        "Forged in the mountains of Jabralthar, carried across the coats of Hageshikaigan, bury in the valleys of the ancient Oaxavajo: This is a modest pick axe.",
+      "value": 1.0,
+      "shop_price": 1
+    }
+  },
+  {
+    "model": "api.item",
+    "pk": 2,
+    "fields": {
+      "name": "Axe-pick v2",
+      "short_description": "v2 short",
+      "long_description": "v2 long",
+      "value": 5.0,
+      "shop_price": 1
+    }
+  },
+  {
+    "model": "api.item",
+    "pk": 3,
+    "fields": {
+      "name": "Axe-pick v3",
+      "short_description": "v3 short",
+      "long_description": "v3 long",
+      "value": 10.0,
+      "shop_price": 1
+    }
+  }
+]
